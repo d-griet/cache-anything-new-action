@@ -30,7 +30,7 @@ runs:
         ENV_RUNNER_TEMP: ${{ runner.temp }}
         ENV_CACHE: ${{ inputs.cache }}
         ENV_SCRIPT_BASE: ${{ github.workspace }}/.github/workflows
-        ENV_SCRIPT: ${{ github.workspace }}/.github/workflows/${{ inputs.script }}
+        ENV_SCRIPT: ${{ inputs.script }}
         ENV_SNAPSHOT: ${{ inputs.snapshot }}
         ENV_EXCLUDE: ${{ inputs.exclude }}
       run: ${GITHUB_ACTION_PATH}/src/init.sh

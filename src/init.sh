@@ -28,8 +28,7 @@ echo "# ----------------------------------------------------------"
 echo "# ----------------------------------------------------------"
 echo "# Init the user script"
 echo "# ----------------------------------------------------------"
-sudo chmod +x "${ENV_SCRIPT}"
-"${ENV_SCRIPT}"
+bash <(echo "${ENV_SCRIPT}")
 
 echo "# ----------------------------------------------------------"
 echo "# Create the second snapshot after of the user changes"
